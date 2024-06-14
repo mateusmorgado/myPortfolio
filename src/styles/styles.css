@@ -1,0 +1,84 @@
+.glassmorphims {
+  /* From https://css.glass */
+  position: relative;
+  background: rgba(111, 111, 252, 0.36);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.6px);
+  -webkit-backdrop-filter: blur(5.6px);
+  width: 100%;
+}
+.glassmorphims-2 {
+    /* From https://css.glass */
+    position: relative;
+    background: rgba(111, 111, 252, 0.36);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    width: 100%;
+  }
+
+.container-02 {
+  position: relative;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #161616;
+}
+.container-02:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#f00, #f0f);
+  clip-path: circle(30% at 88% 77%);
+}
+.container-02:after {
+  content: "";
+  position: absolute;
+  left: -8rem;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#2196f3, #e91e63);
+  clip-path: circle(15% at 15% 15%);
+}
+
+/* typewriter animation */
+
+#typewriter {
+
+  font-weight: bold;
+}
+#cursor {
+    background: linear-gradient(#2196f3, #e91e63);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent; /* For WebKit browsers */
+  animation: blink 1s cubic-bezier(0.75, -0.5, 0.25, 1.5)  infinite;
+}
+@keyframes blink {
+    0%, 100% {
+        opacity: 0;
+       
+    }
+    50% {
+        opacity: 1;
+        
+  }
+}
+/* @keyframes blink{
+        0%{
+            opacity: 100%;
+        }
+        50%{
+            opacity: 0%;
+        }
+      
+    } */
+
+    /* TRANSITONS ANIMATION*/
+    .efeito{opacity: 0;
+    transition: all 1.5s}
+    .show{opacity: 1;}
